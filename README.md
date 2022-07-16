@@ -48,9 +48,8 @@ The following table has an equivalence between ASVS chapters and STRIDE threats:
 * **Teams**: the teams that are usually involved in the implementation of the control. 
     - Bear in mind that ASVS aims for an holistic approach to promote cross-team collaboration. "Security is everyone's responsibility!"
 * **STRIDE**: threats applicable to that ASVS chapter (for more info check the [STRIDE](#stride) section).
-    - Threats names are compressed by their first letter and corresponding emoji (i.e. `🤡 T` for Tampering).
     - There are some blank cells because some chapters that depend on the specific context of the project (i.e. *V12 - Files and Resources*) or are addressed in the design phase (i.e. *V1 - Architecture & Design*).
-* **References**: the short code of the reference (more info at [References and inspiration](#references-and-inspiration) section).
+* **References**: the short name of the reference (see [References and inspiration](#references-and-inspiration) below).
 * **Notes**: additional context or comments if applicable.
 
 ### References and inspiration
@@ -58,7 +57,7 @@ The following table has an equivalence between ASVS chapters and STRIDE threats:
 | Short name | Reference | Author | Notes |
 |-----|-----|-----|-----|
 | RTMP | [**HOWTO-Rapid Threat Model Prototyping** book ](https://github.com/geoffrey-hill-tutamantic/rapid-threat-model-prototyping-docs/blob/master/18x26.Tutamen%20HOWTO-Rapid%20Threat%20Model%20Prototyping.pdf) | Geoffrey Hill, Tunamatic | Buit on OWASP Top 10 2017
-| Martio Platt | [**STRIDE-OT10-CWE-OPC-ASVS** excel](https://github.com/geoffrey-hill-tutamantic/rapid-threat-model-prototyping-docs/blob/master/19h20.mar.mapping%20table%20-%20STRIDE-OT10-CWE-OPC-ASVS.xlsx) | Mario Platt | Buit on OWASP Top 10 2017 and ASVS 3.x
+| STRIDE-OT10-CWE-OPC-ASVS | [**STRIDE-OT10-CWE-OPC-ASVS** excel](https://github.com/geoffrey-hill-tutamantic/rapid-threat-model-prototyping-docs/blob/master/19h20.mar.mapping%20table%20-%20STRIDE-OT10-CWE-OPC-ASVS.xlsx) | Mario Platt | Buit on OWASP Top 10 2017 and ASVS 3.x
 | ASVS | [**Application Security Verification Standard v4.0.3**](https://github.com/OWASP/ASVS/tree/v4.0.3/4.0) | OWASP | N/A
 
 ## How to use
@@ -78,7 +77,6 @@ The following table has an equivalence between ASVS chapters and STRIDE threats:
 
  - [ ] Find aditional references to support the categorization.
  - [ ] Decompose the ASVS chapters into sections to be more specific.
- - [ ] Migrate the table to a CSV format.
  - [ ] Create a [SecurityRAT](https://owasp.org/www-project-securityrat/) requirement set using this format.
 
 
@@ -86,5 +84,3 @@ The following table has an equivalence between ASVS chapters and STRIDE threats:
 [^2]: Extracted from https://en.wikipedia.org/wiki/STRIDE_(security)
 [^3]: Extracted from https://docs.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats
 [^4]: Commonly referenced as "non-repudiation", but IMHO it's self-referential and not very descriptive.
-[^5]: Related to V1 - Architecture & Design
-[^6]: Depends if the service has this feature.
