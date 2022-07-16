@@ -49,10 +49,8 @@ The following table has an equivalence between ASVS chapters and STRIDE threats:
     - Bear in mind that ASVS aims for an holistic approach to promote cross-team collaboration. "Security is everyone's responsibility!"
 * **STRIDE**: threats applicable to that ASVS chapter (for more info check the [STRIDE](#stride) section).
     - There are some blank cells because some chapters that depend on the specific context of the project (i.e. *V12 - Files and Resources*) or are addressed in the design phase (i.e. *V1 - Architecture & Design*).
-* **References**: the short name of the reference (see [References and inspiration](#references-and-inspiration) below).
 * **Notes**: additional context or comments if applicable.
-
-### References and inspiration
+* **References**: the short name of the reference:
 
 | Short name | Reference | Author | Notes |
 |-----|-----|-----|-----|
