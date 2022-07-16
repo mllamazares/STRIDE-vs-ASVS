@@ -60,7 +60,7 @@ The following table has an equivalence between ASVS chapters and STRIDE threats 
 * **ASVS Chapter**: the chapter of the ASVS standard to be mapped.
     - Check ASVS high-level structure at [How To Reference ASVS Requirements](https://owasp.org/www-project-application-security-verification-standard/).
 * **Teams**: the teams that are usually involved in the implementation of the control. 
-    - Bear in mind that ASVS aims for an holistic approach to promote cross-team collaboration. "Security is eveyone job!"
+    - Bear in mind that ASVS aims for an holistic approach to promote cross-team collaboration. "Security is everyone's responsibility!"
 * **STRIDE**: threats applicable to that ASVS chapter (for more info check the [STRIDE](#stride) section).
     - Threats names are compressed by their first letter and corresponding emoji (i.e. `🤡 T` for Tampering).
     - There are some blank cells because some chapters that depend on the specific context of the project (i.e. *V12 - Files and Resources*) or are addressed in the design phase (i.e. *V1 - Architecture & Design*).
@@ -88,10 +88,11 @@ The following table has an equivalence between ASVS chapters and STRIDE threats 
     - Check [OWASP ASVS 4.0 testing guide](https://github.com/BlazingWind/OWASP-ASVS-4.0-testing-guide) for practical examples.
 7. Track the completion of the security requirements to handle [residual risk](https://en.wikipedia.org/wiki/Residual_risk).
 
-## TO-DO
+## TODO
 
  - [ ] Find aditional references to support the categorization.
  - [ ] Decompose the ASVS chapters into sections to be more specific.
+ - [ ] Migrate the table to a CSV format.
  - [ ] Create a [SecurityRAT](https://owasp.org/www-project-securityrat/) requirement set using this format.
 
 
