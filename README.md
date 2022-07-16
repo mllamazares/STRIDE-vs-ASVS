@@ -81,12 +81,13 @@ The following table has an equivalence between ASVS chapters and STRIDE threats:
 2. Use Threat Modeling with STRIDE to identify the threats.
     - My personal choice is [RTMP methodology](https://github.com/geoffrey-hill-tutamantic/rapid-threat-model-prototyping-docs), which is *agile-friendly*.
 3. Use the [STRIDE vs ASVS table](#equivalence-table) to detect which ASVS chapter aims to mitigate each kind of threat.
-4. Accommodate the requirements to the context of your problem (maybe some controls need modifications or not all of them are applicable).
-5. Provide extra context using the [User Stories](https://en.wikipedia.org/wiki/User_story) format.
+4. Accommodate the requirements to the context of your problem.
+    - Maybe some controls need modifications or not all of them are applicable.
+6. Provide extra context using the [User Stories](https://en.wikipedia.org/wiki/User_story) format.
     - Check [project ASVS User Stories](https://github.com/OpenSecuritySummit/project-ASVS-User-Stories) for practical examples.
-6. Try to automate security controls as much as possible. Level 1 is usually easy to automate.
+7. Try to automate security controls as much as possible. Level 1 is usually easy to automate.
     - Check [OWASP ASVS 4.0 testing guide](https://github.com/BlazingWind/OWASP-ASVS-4.0-testing-guide) for practical examples.
-7. Track the completion of the security requirements to handle [residual risk](https://en.wikipedia.org/wiki/Residual_risk).
+8. Track the completion of the security requirements to handle [residual risk](https://en.wikipedia.org/wiki/Residual_risk).
 
 ## TODO
 
