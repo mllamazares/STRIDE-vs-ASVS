@@ -1,5 +1,8 @@
 # STRIDE vs ASVS
 
+![](https://img.shields.io/badge/lisense-MIT-green)
+[![](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mllamazares/)
+
 The purpose of this repository is to act as a bridge between the Threat Modeling and the security controls by providing an [equivalence table](#equivalence-table) between the [STRIDE](#stride-2) model and the [Application Security Verification Standard (ASVS)](#asvs-1) chapters.
 
 ## Pre-requisites and context
