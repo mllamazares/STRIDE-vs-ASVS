@@ -23,16 +23,16 @@ STRIDE is a model for identifying computer security threats developed by Praerit
 It was initially created as part of the process of threat modelling. It is used in conjunction with a model of the target system that can be constructed in parallel. This includes a full breakdown of processes, data stores, data flows, and trust boundaries.
 Today it is often used by security experts to help answer the question *"what can go wrong in this system we're working on?"*. 
 
-Each threat is a violation of a desirable property for a system:
+Each threat is a violation of a desirable property for a system [^3]:
 
 | Threat                   | Emoji | Description                                                                                                                                                                           | Desired property  |
 |--------------------------|:-----:|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| **S**poofing                 | 🎭   | Accessing and use of another user’s credentials, such as username and password.                                                                                                       | Authenticity
-| **T**ampering                | 🤡   | Maliciously change or modify persistent data, such as records in a database, and the alteration of data in transit between two computers over an open network, such as the Internet.  | Integrity
-| **R**epudiation              | 📝   | Performing prohibited operations in a system that cannot trace the operations.                                                                                          | Trazability [^3]
-| **I**nformation disclosure   | 🔓   | Read a file that one was not granted access to, or to read data in transit.                                                                                                           | Confidentiality
-| **D**enial of Service        | 💥   | Deny access to valid users, such as by making a web server temporarily unavailable or unusable.                                                                                       | Availability
-| **E**levation of Privilege   | 👑   | Gain privileged access to resources to gain unauthorized access to information or to compromise a system.                                                                    | Authorization
+| **S**poofing                 | 🎭   | Involves illegally accessing and then using another user's authentication information, such as username and password                                                                                                       | Authenticity
+| **T**ampering                | 🤡   | Involves the malicious modification of data. Examples include unauthorized changes made to persistent data, such as that held in a database, and the alteration of data as it flows between two computers over an open network, such as the Internet  | Integrity
+| **R**epudiation              | 📝   | Associated with users who deny performing an action without other parties having any way to prove otherwise — for example, a user performs an illegal operation in a system that lacks the ability to trace the prohibited operations. Non-Repudiation refers to the ability of a system to counter repudiation threats. For example, a user who purchases an item might have to sign for the item upon receipt. The vendor can then use the signed receipt as evidence that the user did receive the package                                                                                          | Trazability [^4]
+| **I**nformation disclosure   | 🔓   | Involves the exposure of information to individuals who are not supposed to have access to it — for example, the ability of users to read a file that they were not granted access to, or the ability of an intruder to read data in transit between two computers                                                                                                           | Confidentiality
+| **D**enial of Service        | 💥   | Denial of service (DoS) attacks deny service to valid users — for example, by making a Web server temporarily unavailable or unusable. You must protect against certain types of DoS threats simply to improve system availability and reliability                                                                                       | Availability
+| **E**levation of Privilege   | 👑   | An unprivileged user gains privileged access and thereby has sufficient access to compromise or destroy the entire system. Elevation of privilege threats include those situations in which an attacker has effectively penetrated all system defenses and become part of the trusted system itself, a dangerous situation indeed                                                                    | Authorization
 
 ## Equivalence table
 
@@ -50,9 +50,9 @@ The following table has an equivalence between ASVS chapters and STRIDE threats 
 | V8 - Data Protection                       | Development | `🔓 I`                                                           | - Mario Platt → I |                                                                   
 | V9 - Communication                         | Development, Infrastructure | `🔓 I`                                           | - Mario Platt → Scoping and Design | Related to *V1 - Architecture & Design*                                                                   
 | V10 - Malicious Code                       | Development, Infrastructure |                                                 |                                                                      
-| V11 - Business Logic [^4]                      | Development, Design |                                                          |                                                                     
-| V12 - Files and Resources [^5]                  | Development |                                                               | - ASVS pag. 56 → DI (LFI might be considered as I)<br>- Mario Platt → Scoping and Design                                                               
-| V13 - API and Web Service [^5]                 | Development |                                                                                                                               
+| V11 - Business Logic [^5]                      | Development, Design |                                                          |                                                                     
+| V12 - Files and Resources [^6]                  | Development |                                                               | - ASVS pag. 56 → DI (LFI might be considered as I)<br>- Mario Platt → Scoping and Design                                                               
+| V13 - API and Web Service [^6]                 | Development |                                                                                                                               
 | V14 - Configuration                        | Development, Infrastructure | `🔓 I`<br>`💥 D`<br>`👑 E` | - RTMP - A6 Security Misconfiguration → ESI<br>- RTMP - A9 Using Components with know Vuln→ ESD<br>- Mario Platt → IDE                                            
 
 ### Table format
@@ -97,6 +97,7 @@ The following table has an equivalence between ASVS chapters and STRIDE threats 
 
 [^1]: Extracted from https://owasp.org/www-project-application-security-verification-standard/
 [^2]: Extracted from https://en.wikipedia.org/wiki/STRIDE_(security)
-[^3]: Commonly referenced as "non-repudiation", but IMHO it's self-referential and not very descriptive.
-[^4]: Related to V1 - Architecture & Design
-[^5]: Depends if the service has this feature.
+[^3]: Extracted from https://docs.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats
+[^4]: Commonly referenced as "non-repudiation", but IMHO it's self-referential and not very descriptive.
+[^5]: Related to V1 - Architecture & Design
+[^6]: Depends if the service has this feature.
