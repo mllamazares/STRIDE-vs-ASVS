@@ -1,34 +1,19 @@
-STRIDE;ASVS chapter;Teams;Reference;Notes
-Spoofing;V2 - Authentication;Development;"RTMP - A2 Broken Authentication (SRI)
-STRIDE-OT10-CWE-OPC-ASVS (S)";
-Spoofing;V3 - Session Management;Development;"RTMP - A2 Broken Authentication (SRI)
-STRIDE-OT10-CWE-OPC-ASVS (S)";
-Tampering;V4 - Access Control;Development;"RTMP - A5 Access Control (ERT)
-STRIDE-OT10-CWE-OPC-ASVS (E) 
-ASVS pag. 36 (TE)";
-Tampering;V5 - Validation, Sanitization and Encoding;Development;"RTMP - A1 Injection (TED)
-STRIDE-OT10-CWE-OPC-ASVS (T)";
-Repudiation;V7 - Error Handling and Logging;Development;"RTMP - A10 Insufficient Logging & Monitoring (TRI)
-STRIDE-OT10-CWE-OPC-ASVS (RID)
-ASVS pag. 44 (RI)";
-Information disclosure;V6 - Stored Cryptography;Development, Infrastructure;STRIDE-OT10-CWE-OPC-ASVS (I);
-Information disclosure;V7 - Error Handling and Logging;Development;"RTMP - A10 Insufficient Logging & Monitoring (TRI)
-STRIDE-OT10-CWE-OPC-ASVS (RID)
-ASVS pag. 44 (RI)";
-Information disclosure;V8 - Data Protection;Development;STRIDE-OT10-CWE-OPC-ASVS (I);
-Information disclosure;V9 - Communication;Development, Infrastructure;STRIDE-OT10-CWE-OPC-ASVS (Scoping and Design);
-Information disclosure;V14 - Configuration;Development, Infrastructure;"RTMP - A6 Security Misconfiguration (ESI)
-STRIDE-OT10-CWE-OPC-ASVS (IDE)";
-Denial of service;V14 - Configuration;Development, Infrastructure;"RTMP - A9 Using Components with know Vuln (ESD)
-STRIDE-OT10-CWE-OPC-ASVS (IDE)";
-Elevation of privilege;V14 - Configuration;Development, Infrastructure;"RTMP - A6 Security Misconfiguration (ESI)
-RTMP - A9 Using Components with know Vuln (ESD)
-STRIDE-OT10-CWE-OPC-ASVS (IDE)";
-Elevation of privilege;V4 - Access Control;Development;"RTMP - A5 Access Control (ERT)
-STRIDE-OT10-CWE-OPC-ASVS (E) 
-ASVS pag. 36 (TE)";
-;"V1 - Architecture & Design	";Design;;
-;V10 - Malicious Code;Development, Infrastructure;;
-;V11 - Business Logic;Design, Development;;Depends if the service has this feature
-;V12 - Files and Resources;Development;;Related to V1 - Architecture & Design
-;V13 - API and Web Service;Development;;Depends if the service has this feature
+STRIDE;ASVS chapter;Teams;Notes;RTMP Reference;Mario Platt Reference;ASVS Reference
+Spoofing;V2 - Authentication;Development;;RTMP - A2 Broken Authentication (SRI);STRIDE-OT10-CWE-OPC-ASVS (S);
+Spoofing;V3 - Session Management;Development;;RTMP - A2 Broken Authentication (SRI);STRIDE-OT10-CWE-OPC-ASVS (S);
+Tampering;V4 - Access Control;Development;;RTMP - A5 Access Control (ERT);STRIDE-OT10-CWE-OPC-ASVS (E) ;ASVS pag. 36 (TE)
+Tampering;V5 - Validation, Sanitization and Encoding;Development;;RTMP - A1 Injection (TED);STRIDE-OT10-CWE-OPC-ASVS (T);
+Repudiation;V7 - Error Handling and Logging;Development;;RTMP - A10 Insufficient Logging & Monitoring (TRI);STRIDE-OT10-CWE-OPC-ASVS (RID);ASVS pag. 44 (RI)
+Information disclosure;V6 - Stored Cryptography;Development, Infrastructure;;;STRIDE-OT10-CWE-OPC-ASVS (I);
+Information disclosure;V7 - Error Handling and Logging;Development;;RTMP - A10 Insufficient Logging & Monitoring (TRI);STRIDE-OT10-CWE-OPC-ASVS (RID);ASVS pag. 44 (RI)
+Information disclosure;V8 - Data Protection;Development;;;STRIDE-OT10-CWE-OPC-ASVS (I);
+Information disclosure;V9 - Communication;Development, Infrastructure;;;STRIDE-OT10-CWE-OPC-ASVS (Scoping and Design);
+Information disclosure;V14 - Configuration;Development, Infrastructure;;RTMP - A6 Security Misconfiguration (ESI);STRIDE-OT10-CWE-OPC-ASVS (IDE);
+Denial of service;V14 - Configuration;Development, Infrastructure;;RTMP - A9 Using Components with know Vuln (ESD);STRIDE-OT10-CWE-OPC-ASVS (IDE);
+Elevation of privilege;V14 - Configuration;Development, Infrastructure;;RTMP - A6 Security Misconfiguration (ESI) and A9 Using Components with know Vuln (ESD);STRIDE-OT10-CWE-OPC-ASVS (IDE);
+Elevation of privilege;V4 - Access Control;Development;;RTMP - A5 Access Control (ERT);STRIDE-OT10-CWE-OPC-ASVS (E) ;ASVS pag. 36 (TE)
+;"V1 - Architecture & Design	";Design;;;STRIDE-OT10-CWE-OPC-ASVS (Scoping and Design);
+;V10 - Malicious Code;Development, Infrastructure;;;STRIDE-OT10-CWE-OPC-ASVS (Scoping and Design);
+;V11 - Business Logic;Design, Development;Depends if the service has this feature;;STRIDE-OT10-CWE-OPC-ASVS (Scoping and Design);
+;V12 - Files and Resources;Development;Related to V1 - Architecture & Design;;STRIDE-OT10-CWE-OPC-ASVS (Scoping and Design);ASVS Pag 56 ? DI (LFI might be considered as I)
+;V13 - API and Web Service;Development;Depends if the service has this feature;;STRIDE-OT10-CWE-OPC-ASVS (Scoping and Design);
