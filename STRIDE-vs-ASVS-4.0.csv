@@ -12,8 +12,8 @@ Information disclosure;V14 - Configuration;Development, Infrastructure;;RTMP - A
 Denial of service;V14 - Configuration;Development, Infrastructure;;RTMP - A9 Using Components with know Vuln (ESD);STRIDE-OT10-CWE-OPC-ASVS (IDE);
 Elevation of privilege;V14 - Configuration;Development, Infrastructure;;RTMP - A6 Security Misconfiguration (ESI) and A9 Using Components with know Vuln (ESD);STRIDE-OT10-CWE-OPC-ASVS (IDE);
 Elevation of privilege;V4 - Access Control;Development;;RTMP - A5 Access Control (ERT);STRIDE-OT10-CWE-OPC-ASVS (E) ;ASVS pag. 36 (TE)
-;"V1 - Architecture & Design	";Design;;;STRIDE-OT10-CWE-OPC-ASVS (Scoping and Design);
+;V1 - Architecture & Design;Design;;;STRIDE-OT10-CWE-OPC-ASVS (Scoping and Design);
 ;V10 - Malicious Code;Development, Infrastructure;;;STRIDE-OT10-CWE-OPC-ASVS (Scoping and Design);
 ;V11 - Business Logic;Design, Development;Depends if the service has this feature;;STRIDE-OT10-CWE-OPC-ASVS (Scoping and Design);
-;V12 - Files and Resources;Development;Related to V1 - Architecture & Design;;STRIDE-OT10-CWE-OPC-ASVS (Scoping and Design);ASVS Pag 56 ? DI (LFI might be considered as I)
+;V12 - Files and Resources;Development;Related to V1 - Architecture & Design;;STRIDE-OT10-CWE-OPC-ASVS (Scoping and Design);ASVS pag. 56 (DI) (LFI might be considered as I)
 ;V13 - API and Web Service;Development;Depends if the service has this feature;;STRIDE-OT10-CWE-OPC-ASVS (Scoping and Design);
