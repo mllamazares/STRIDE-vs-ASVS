@@ -5,12 +5,29 @@
 
 The purpose of this repository is to act as a bridge between the Threat Modeling and the security controls by providing an [equivalence table](#equivalence-table) between the [STRIDE](#stride-2) model and the [Application Security Verification Standard (ASVS)](#asvs-1) chapters.
 
-## Pre-requisites and context
+## Rationale
 
-In the Security Requirement Engineering process, we commonly use techniques like Threat Modeling (along with frameworks such as STRIDE, LINDUNN or PASTA) to identify threats to which the system is exposed.
-Once we have identified those threats, we need to mitigate them by defining security controls using industry standards like ASVS.
+In the Security Requirement Engineering process, we commonly use techniques like Threat Modeling (along with frameworks such as *STRIDE*, *LINDUNN* or *PASTA*) to identify threats to which the system is exposed. Once we have identified those threats, we need to mitigate them by defining security controls.
 
-### Application Security Verification Standard (ASVS) [^1]
+### Why we need this table?
+
+The third step of [Rapid Threat Modeling Prototyping (RTMP)](https://github.com/geoffrey-hill-tutamantic/rapid-threat-model-prototyping-docs/blob/master/18x26.Tutamen%20HOWTO-Rapid%20Threat%20Model%20Prototyping.pdf) methodology is *Mitigations*. The purpose is to define at least one mitigation for each STRIDE threat identified in the previous steps. In that section, it also provides a table that lists the elements of the OWASP Top 10 (OT10) mapped to STRIDE elements.
+
+I've found the following issues:
+1. Their OWASP Top 10 matrix is outdated (2017 version instead of 2021).
+2. You need an extra step to select the security controls associated with those mitigations (from OT10 to ASVS).
+
+To address the second issue, Mario Platt ([@mario-platt](https://github.com/mario-platt)) contributed to the repository by creating an Excel called [STRIDE-OT10-CWE-OPC-ASVS](https://github.com/geoffrey-hill-tutamantic/rapid-threat-model-prototyping-docs/blob/master/19h20.mar.mapping%20table%20-%20STRIDE-OT10-CWE-OPC-ASVS.xlsx), that not only maps STRIDE against ASVS but also with CWE, OWASP Proactive Controls and OWASP Top 10.
+
+The current issues with this approach are:
+1. The OWASP Top 10 reference is outdated (2017 version instead of 2021).
+2. The ASVS matrix is outdated (v3.x instead of v4.x).
+
+Finally, even though I admire both authors, I have minor disagreements in the categorization. So in this repository, I will try to solve the issues mentioned above with a [new equivalence table](#equivalence-table). 
+
+## Pre-requisites
+
+### Application Security Verification Standard (ASVS) [^2]
 
 The [OWASP Application Security Verification Standard (ASVS)](https://owasp.org/www-project-application-security-verification-standard) Project provides a basis for testing web application technical security controls and also provides developers with a list of requirements for secure development.
 
@@ -20,19 +37,19 @@ The primary aim of the project is to normalize the range in the coverage and lev
 * **Use as guidance** - Provide guidance to security control developers as to what to build into security controls in order to satisfy application security requirements, and
 * **Use during procurement** - Provide a basis for specifying application security verification requirements in contracts.
 
-### STRIDE [^2]
+### STRIDE [^3]
 
 STRIDE is a model for identifying computer security threats developed by Praerit Garg and Loren Kohnfelder at Microsoft. It provides a mnemonic for security threats in six categories.
 It was initially created as part of the process of threat modelling. It is used in conjunction with a model of the target system that can be constructed in parallel. This includes a full breakdown of processes, data stores, data flows, and trust boundaries.
 Today it is often used by security experts to help answer the question *"what can go wrong in this system we're working on?"*. 
 
-Each threat is a violation of a desirable property for a system [^3]:
+Each threat is a violation of a desirable property for a system [^4]:
 
 | Threat                   | Emoji | Description                                                                                                                                                                           | Desired property  |
 |--------------------------|:-----:|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
 | **S**poofing                 | 🎭   | Involves illegally accessing and then using another user's authentication information, such as username and password                                                                                                       | Authenticity
 | **T**ampering                | 🤡   | Involves the malicious modification of data. Examples include unauthorized changes made to persistent data, such as that held in a database, and the alteration of data as it flows between two computers over an open network, such as the Internet  | Integrity
-| **R**epudiation              | 📝   | Associated with users who deny performing an action without other parties having any way to prove otherwise — for example, a user performs an illegal operation in a system that lacks the ability to trace the prohibited operations. Non-Repudiation refers to the ability of a system to counter repudiation threats. For example, a user who purchases an item might have to sign for the item upon receipt. The vendor can then use the signed receipt as evidence that the user did receive the package                                                                                          | Trazability [^4]
+| **R**epudiation              | 📝   | Associated with users who deny performing an action without other parties having any way to prove otherwise — for example, a user performs an illegal operation in a system that lacks the ability to trace the prohibited operations. Non-Repudiation refers to the ability of a system to counter repudiation threats. For example, a user who purchases an item might have to sign for the item upon receipt. The vendor can then use the signed receipt as evidence that the user did receive the package                                                                                          | Trazability [^5]
 | **I**nformation disclosure   | 🔓   | Involves the exposure of information to individuals who are not supposed to have access to it — for example, the ability of users to read a file that they were not granted access to, or the ability of an intruder to read data in transit between two computers                                                                                                           | Confidentiality
 | **D**enial of Service        | 💥   | Denial of service (DoS) attacks deny service to valid users — for example, by making a Web server temporarily unavailable or unusable. You must protect against certain types of DoS threats simply to improve system availability and reliability                                                                                       | Availability
 | **E**levation of Privilege   | 👑   | An unprivileged user gains privileged access and thereby has sufficient access to compromise or destroy the entire system. Elevation of privilege threats include those situations in which an attacker has effectively penetrated all system defenses and become part of the trusted system itself, a dangerous situation indeed                                                                    | Authorization
@@ -77,8 +94,8 @@ The following table has an equivalence between ASVS chapters and STRIDE threats:
  - [ ] Decompose the ASVS chapters into sections to be more specific.
  - [ ] Create a [SecurityRAT](https://owasp.org/www-project-securityrat/) requirement set using this format.
 
-
-[^1]: Extracted from https://owasp.org/www-project-application-security-verification-standard/
-[^2]: Extracted from https://en.wikipedia.org/wiki/STRIDE_(security)
-[^3]: Extracted from https://docs.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats
-[^4]: Commonly referenced as "non-repudiation", but IMHO it's self-referential and not very descriptive.
+[^1]: RTMP page 17
+[^2]: Extracted from https://owasp.org/www-project-application-security-verification-standard/
+[^3]: Extracted from https://en.wikipedia.org/wiki/STRIDE_(security)
+[^4]: Extracted from https://docs.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats
+[^5]: Commonly referenced as "non-repudiation", but IMHO it's self-referential and not very descriptive.
