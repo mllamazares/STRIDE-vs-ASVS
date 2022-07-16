@@ -9,21 +9,21 @@ The purpose of this repository is to act as a bridge between the Threat Modeling
 
 In the Security Requirement Engineering process, we commonly use techniques like Threat Modeling (along with frameworks such as *STRIDE*, *LINDUNN* or *PASTA*) to identify threats to which the system is exposed. Once we have identified those threats, we need to mitigate them by defining security controls.
 
-### Why we need this table?
+### Why do we need this table?
 
 The third step of [Rapid Threat Modeling Prototyping (RTMP)](https://github.com/geoffrey-hill-tutamantic/rapid-threat-model-prototyping-docs/blob/master/18x26.Tutamen%20HOWTO-Rapid%20Threat%20Model%20Prototyping.pdf) methodology is *Mitigations*. The purpose is to define at least one mitigation for each STRIDE threat identified in the previous steps. In that section, it also provides a table that lists the elements of the OWASP Top 10 (OT10) mapped to STRIDE elements.
 
-I've found the following issues:
-1. Their OWASP Top 10 matrix is outdated (2017 version instead of 2021).
+Detected improvements:
+1. The OWASP Top 10 matrix is outdated (2017 version instead of 2021).
 2. You need an extra step to select the security controls associated with those mitigations (from OT10 to ASVS).
 
 To address the second issue, Mario Platt ([@mario-platt](https://github.com/mario-platt)) contributed to the repository by creating an Excel called [STRIDE-OT10-CWE-OPC-ASVS](https://github.com/geoffrey-hill-tutamantic/rapid-threat-model-prototyping-docs/blob/master/19h20.mar.mapping%20table%20-%20STRIDE-OT10-CWE-OPC-ASVS.xlsx), that not only maps STRIDE against ASVS but also with CWE, OWASP Proactive Controls and OWASP Top 10.
 
-The current issues with this approach are:
+Detected improvements:
 1. The OWASP Top 10 reference is outdated (2017 version instead of 2021).
-2. The ASVS matrix is outdated (v3.x instead of v4.x).
+2. The ASVS matrix is outdated (v3.0 instead of v4.0).
 
-Finally, even though I admire both authors, I have minor disagreements in the categorization. So in this repository, I will try to solve the issues mentioned above with a [new equivalence table](#equivalence-table). 
+Finally, I have minor disagreements in some of the categorization of both references. In this repository, I will try to address the improvements mentioned above with [a new **STRIDE vs ASVS** equivalence table](#equivalence-table). 
 
 ## Pre-requisites
 
@@ -47,12 +47,12 @@ Each threat is a violation of a desirable property for a system [^4]:
 
 | Threat                   | Emoji | Description                                                                                                                                                                           | Desired property  |
 |--------------------------|:-----:|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| **S**poofing                 | 🎭   | Involves illegally accessing and then using another user's authentication information, such as username and password                                                                                                       | Authenticity
-| **T**ampering                | 🤡   | Involves the malicious modification of data. Examples include unauthorized changes made to persistent data, such as that held in a database, and the alteration of data as it flows between two computers over an open network, such as the Internet  | Integrity
-| **R**epudiation              | 📝   | Associated with users who deny performing an action without other parties having any way to prove otherwise — for example, a user performs an illegal operation in a system that lacks the ability to trace the prohibited operations. Non-Repudiation refers to the ability of a system to counter repudiation threats. For example, a user who purchases an item might have to sign for the item upon receipt. The vendor can then use the signed receipt as evidence that the user did receive the package                                                                                          | Trazability [^5]
-| **I**nformation disclosure   | 🔓   | Involves the exposure of information to individuals who are not supposed to have access to it — for example, the ability of users to read a file that they were not granted access to, or the ability of an intruder to read data in transit between two computers                                                                                                           | Confidentiality
-| **D**enial of Service        | 💥   | Denial of service (DoS) attacks deny service to valid users — for example, by making a Web server temporarily unavailable or unusable. You must protect against certain types of DoS threats simply to improve system availability and reliability                                                                                       | Availability
-| **E**levation of Privilege   | 👑   | An unprivileged user gains privileged access and thereby has sufficient access to compromise or destroy the entire system. Elevation of privilege threats include those situations in which an attacker has effectively penetrated all system defenses and become part of the trusted system itself, a dangerous situation indeed                                                                    | Authorization
+| **S**poofing                 | 🎭   | Accessing and use of another user’s credentials, such as username and password                                                                                                       | Authenticity
+| **T**ampering                | 🤡   | Intending to maliciously change or modify persistent data, such as records in a database, and the alteration of data in transit between two computers over an open network, such as the Internet  | Integrity
+| **R**epudiation              | 📝   | Performing prohibited operations in a system that lacks the ability to trace the operations                                                                                          | Trazability [^5]
+| **I**nformation disclosure   | 🔓   | Intending to read a file that one was not granted access to, or to read data in transit                                                                                                           | Confidentiality
+| **D**enial of Service        | 💥   | Attempting to deny access to valid users, such as by making a web server temporarily unavailable or unusable                                                                                       | Availability
+| **E**levation of Privilege   | 👑   | Intending to gain privileged access to resources in order to gain unauthorized access to information or to compromise a system                                                                    | Authorization
 
 ## Equivalence table
 
@@ -97,5 +97,5 @@ The following table has an equivalence between ASVS chapters and STRIDE threats:
 [^1]: RTMP page 17
 [^2]: Extracted from https://owasp.org/www-project-application-security-verification-standard/
 [^3]: Extracted from https://en.wikipedia.org/wiki/STRIDE_(security)
-[^4]: Extracted from https://docs.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats
+[^4]: Extracted from https://owasp.org/www-community/Threat_Modeling_Process#stride-threat-list
 [^5]: Commonly referenced as "non-repudiation", but IMHO it's self-referential and not very descriptive.
