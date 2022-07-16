@@ -60,12 +60,12 @@ The following table has an equivalence between ASVS chapters and STRIDE threats:
 
 ### Table format
 
+* **STRIDE**: threats applicable to that ASVS chapter (for more info check the [STRIDE](#stride) section).
+    - There are some blank cells because some chapters that depend on the specific context of the project (i.e. *V12 - Files and Resources*) or are addressed in the design phase (i.e. *V1 - Architecture & Design*).
 * **ASVS Chapter**: the chapter of the ASVS standard to be mapped.
     - Check ASVS high-level structure at [How To Reference ASVS Requirements](https://owasp.org/www-project-application-security-verification-standard/).
 * **Teams**: the teams that are usually involved in the implementation of the control. 
-    - Bear in mind that ASVS aims for an holistic approach to promote cross-team collaboration. "Security is everyone's responsibility!"
-* **STRIDE**: threats applicable to that ASVS chapter (for more info check the [STRIDE](#stride) section).
-    - There are some blank cells because some chapters that depend on the specific context of the project (i.e. *V12 - Files and Resources*) or are addressed in the design phase (i.e. *V1 - Architecture & Design*).
+    - Bear in mind that ASVS aims for an holistic approach to promote cross-team collaboration. *Security is everyone's responsibility!* ✊
 * **Notes**: additional context or comments if applicable.
 * **References**: the short name of the reference:
 
