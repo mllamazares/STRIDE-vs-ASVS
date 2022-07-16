@@ -39,24 +39,7 @@ Each threat is a violation of a desirable property for a system [^3]:
 
 ## Equivalence table
 
-The following table has an equivalence between ASVS chapters and STRIDE threats (check [Table format](#table-format) and [References and Inspiration](#references-and-inspiration) for more context):
-
-| ASVS Chapter                                   | Teams | STRIDE                                                                                       | References                                                       
-|------------------------------------------------|----|-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------| 
-| V1 - Architecture & Design                 | Design |                                                                      | - Mario Platt → Scoping and Design                              
-| V2 - Authentication                        | Development | `🎭 S`                                                                         | - RTMP - A2 Broken Authentication → SRI<br>- Mario Platt → S  
-| V3 - Session Management                    | Development | `🎭 S`                                                                         | - RTMP - A2 Broken Authentication → SRI<br>- Mario Platt → S  
-| V4 - Access Control                        | Development | `🤡 T`<br>`👑 E`                                        | - RTMP - A5 Access Control → ERT<br>- Mario Platt → E<br>- ASVS pag. 36 → TE (mentions "tampering" explicitly)  
-| V5 - Validation, Sanitization and Encoding | Development | `🤡 T`                                                                        | - RTMP - A1 Injection → TED<br>- Mario Platt → T  
-| V6 - Stored Cryptography                   | Development, Infrastructure | `🔓 I`                                           | - ASVS Pag 42 → I |                                                                  
-| V7 - Error Handling and Logging            | Development | `📝 R`<br>`🔓 I`                                      | - RTMP - A10 Insufficient Logging & Monitoring → TRI<br>- Mario Platt → RID<br>- ASVS pag. 44 → RI                                                                   
-| V8 - Data Protection                       | Development | `🔓 I`                                                           | - Mario Platt → I |                                                                   
-| V9 - Communication                         | Development, Infrastructure | `🔓 I`                                           | - Mario Platt → Scoping and Design | Related to *V1 - Architecture & Design*                                                                   
-| V10 - Malicious Code                       | Development, Infrastructure |                                                 |                                                                      
-| V11 - Business Logic [^5]                      | Development, Design |                                                          |                                                                     
-| V12 - Files and Resources [^6]                  | Development |                                                               | - ASVS pag. 56 → DI (LFI might be considered as I)<br>- Mario Platt → Scoping and Design                                                               
-| V13 - API and Web Service [^6]                 | Development |                                                                                                                               
-| V14 - Configuration                        | Development, Infrastructure | `🔓 I`<br>`💥 D`<br>`👑 E` | - RTMP - A6 Security Misconfiguration → ESI<br>- RTMP - A9 Using Components with know Vuln→ ESD<br>- Mario Platt → IDE                                            
+The following table has an equivalence between ASVS chapters and STRIDE threats: [STRIDE-vs-ASVS-4.0.csv](STRIDE-vs-ASVS-4.0.csv)
 
 ### Table format
 
