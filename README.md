@@ -23,7 +23,7 @@ Detected improvements:
 1. The OWASP Top 10 reference is outdated (2017 version instead of 2021).
 2. The ASVS matrix is outdated (v3.0 instead of v4.0).
 
-Finally, I have minor disagreements in some of the categorization of both references. In this repository, I will try to address the improvements mentioned above with [a new **STRIDE vs ASVS** equivalence table](#equivalence-table). 
+Finally, I have minor disagreements in some of the categorization of both authors. In this repository, I will try to address the improvements mentioned above with [a new **STRIDE vs ASVS** equivalence table](#equivalence-table). 
 
 ## Pre-requisites
 
