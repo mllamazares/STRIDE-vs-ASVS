@@ -14,7 +14,7 @@ In the Security Requirement Engineering process, we commonly use techniques like
 
 ### Why do we need this table?
 
-The third step of the [Rapid Threat Modeling Prototyping (RTMP)](https://github.com/geoffrey-hill-tutamantic/rapid-threat-model-prototyping-docs/blob/master/18x26.Tutamen%20HOWTO-Rapid%20Threat%20Model%20Prototyping.pdf) methodology is *Mitigations* [^1]. The purpose is to define at least one mitigation for each STRIDE threat identified in the previous steps. In that section, it also provides a table that lists the elements of the OWASP Top 10 (OT10) mapped to STRIDE elements.
+The third step of the [Rapid Threat Modeling Prototyping (RTMP)](https://github.com/geoffrey-hill-tutamantic/rapid-threat-model-prototyping-docs/blob/master/18x26.Tutamen%20HOWTO-Rapid%20Threat%20Model%20Prototyping.pdf) methodology is *Mitigations* [^1]. Its goal is to define at least one mitigation for each STRIDE threat identified in the previous steps. In that section, it also provides a table that lists the elements of the OWASP Top 10 (OT10) mapped to STRIDE elements.
 
 Potential improvements:
 1. The OWASP Top 10 reference is outdated (2017 version instead of 2021).
