@@ -2,7 +2,7 @@ STRIDE,ASVS chapter,Teams,Notes,RTMP Reference,Mario Platt Reference,ASVS Refere
 Spoofing,V2 - Authentication,Development,,A2 Broken Authentication - SRI,S,
 Spoofing,V3 - Session Management,Development,,A2 Broken Authentication - SRI,S,
 Tampering,V4 - Access Control,Development,,A5 Access Control - ERT,E,page 36 - TE
-Tampering,V5 - Validation, Sanitization and Encoding,Development,,A1 Injection - TED,T,
+Tampering,V5 - Validation, Sanitization and Encoding,Development,,A1 Injection - TED,T
 Repudiation,V7 - Error Handling and Logging,Development,,A10 Insufficient Logging & Monitoring - TRI,RID,page 44 - RI
 Information disclosure,V6 - Stored Cryptography,Development, Infrastructure,,,I,
 Information disclosure,V7 - Error Handling and Logging,Development,,A10 Insufficient Logging & Monitoring - TRI,RID,page 44 - RI
