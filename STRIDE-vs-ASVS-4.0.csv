@@ -7,13 +7,13 @@ Repudiation,V7 - Error Handling and Logging,Development,,A10 Insufficient Loggin
 Information disclosure,V6 - Stored Cryptography,Development, Infrastructure,,,I
 Information disclosure,V7 - Error Handling and Logging,Development,,A10 Insufficient Logging & Monitoring - TRI,RID,page 44 - RI
 Information disclosure,V8 - Data Protection,Development,,,I,
-Information disclosure,V9 - Communication,Development, Infrastructure,,,Scoping and Design
-Information disclosure,V14 - Configuration,Development, Infrastructure,,A6 Security Misconfiguration - ESI,IDE
-Denial of service,V14 - Configuration,Development, Infrastructure,,A9 Using Components with know Vuln - ESD,IDE
-Elevation of privilege,V14 - Configuration,Development, Infrastructure,,A6 Security Misconfiguration - ESI & A9 Using Components with know Vuln - ESD ,IDE
+Information disclosure,V9 - Communication,"Development, Infrastructure",,,Scoping and Design,
+Information disclosure,V14 - Configuration,"Development, Infrastructure",,A6 Security Misconfiguration - ESI,IDE,
+Denial of service,V14 - Configuration,"Development, Infrastructure",,A9 Using Components with know Vuln - ESD,IDE,
+Elevation of privilege,V14 - Configuration,"Development, Infrastructure",,A6 Security Misconfiguration - ESI & A9 Using Components with know Vuln - ESD ,IDE,
 Elevation of privilege,V4 - Access Control,Development,,A5 Access Control - ERT,E,page 36 - TE
 ,V1 - Architecture & Design,Design,,,Scoping and Design,
 ,V10 - Malicious Code,Development, Infrastructure,,,Scoping and Design
-,V11 - Business Logic,Design, Development,Depends if the service has this feature,,Scoping and Design
+,V11 - Business Logic,"Design, Development",Depends if the service has this feature,,Scoping and Design,
 ,V12 - Files and Resources,Development,Related to V1 - Architecture & Design,,Scoping and Design,page 56 - DI
 ,V13 - API and Web Service,Development,Depends if the service has this feature,,Scoping and Design,
