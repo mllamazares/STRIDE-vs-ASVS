@@ -94,7 +94,7 @@ The following table has an equivalence between STRIDE threats and ASVS chapters:
 
 ## TODO
 
- - [ ] Find aditional references to support the categorization.
+ - [ ] Find additional references to support the categorization.
  - [ ] Decompose the ASVS chapters into sections to be more specific.
  - [ ] Create a [SecurityRAT](https://owasp.org/www-project-securityrat/) requirement set using this format.
 
