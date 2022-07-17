@@ -12,7 +12,7 @@ Information disclosure,V14 - Configuration,Development, Infrastructure,,A6 Secur
 Denial of service,V14 - Configuration,Development, Infrastructure,,A9 Using Components with know Vuln - ESD,IDE
 Elevation of privilege,V14 - Configuration,Development, Infrastructure,,A6 Security Misconfiguration - ESI & A9 Using Components with know Vuln - ESD ,IDE
 Elevation of privilege,V4 - Access Control,Development,,A5 Access Control - ERT,E,page 36 - TE
-,V1 - Architecture & Design,Design,,,Scoping and Design
+,V1 - Architecture & Design,Design,,,Scoping and Design,
 ,V10 - Malicious Code,Development, Infrastructure,,,Scoping and Design
 ,V11 - Business Logic,Design, Development,Depends if the service has this feature,,Scoping and Design
 ,V12 - Files and Resources,Development,Related to V1 - Architecture & Design,,Scoping and Design,page 56 - DI
