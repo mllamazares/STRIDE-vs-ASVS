@@ -72,7 +72,7 @@ The following table has an equivalence between STRIDE threats and ASVS chapters:
 * **Notes**: additional context or comments if applicable.
 * **References**: the short name of the reference:
 
-| Short name | Reference | Author | Notes |
+| Short name | Reference | Author | Description |
 |-----|-----|-----|-----|
 | RTMP | [**HOWTO-Rapid Threat Model Prototyping** book ](https://github.com/geoffrey-hill-tutamantic/rapid-threat-model-prototyping-docs/blob/master/18x26.Tutamen%20HOWTO-Rapid%20Threat%20Model%20Prototyping.pdf) | Geoffrey Hill, Tunamatic | Threat Modeling methodology
 | STRIDE-OT10-CWE-OPC-ASVS | [**STRIDE-OT10-CWE-OPC-ASVS** excel](https://github.com/geoffrey-hill-tutamantic/rapid-threat-model-prototyping-docs/blob/master/19h20.mar.mapping%20table%20-%20STRIDE-OT10-CWE-OPC-ASVS.xlsx) | Mario Platt | Equivalence matrix between STRIDE and other standards
@@ -98,7 +98,7 @@ The following table has an equivalence between STRIDE threats and ASVS chapters:
  - [ ] Decompose the ASVS chapters into sections to be more specific.
  - [ ] Create a [SecurityRAT](https://owasp.org/www-project-securityrat/) requirement set using this format.
 
-[^1]: RTMP page 17
+[^1]: HOWTO-Rapid Threat Model Prototyping, page 17
 [^2]: It is the primary source of inspiration for this repository.
 [^3]: Extracted from https://en.wikipedia.org/wiki/STRIDE_(security)
 [^4]: Extracted from https://owasp.org/www-community/Threat_Modeling_Process#stride-threat-list
