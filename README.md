@@ -6,7 +6,7 @@
 [![Star on GitHub](https://img.shields.io/github/stars/mllamazares/STRIDE-vs-ASVS.svg?style=social)](https://github.com/mllamazares/STRIDE-vs-ASVS/stargazers)
 [![Tweet](https://img.shields.io/twitter/url/https/github.com/mllamazares/STRIDE-vs-ASVS.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20Hyde!%20%E2%9C%A8%20An%20accessible,%20open-source%20markdown%20editor%20for%20any%20user%20E2%9C%A8%20https://github.com/jonsn0w/hyde%20%F0%9F%A4%97)
 
-The purpose of this repository is to act as a bridge between Threat Modeling and the security controls definition by providing an [equivalence table](#equivalence-table) to map the [STRIDE](#stride-2) model against the [Application Security Verification Standard (ASVS)](#application-security-verification-standard-asvs-5) chapters.
+The purpose of this repository is to act as a bridge between Threat Modeling and the security controls definition by providing an [equivalence table](#equivalence-table) to map the [STRIDE](#stride-3) model against the [Application Security Verification Standard (ASVS)](#application-security-verification-standard-asvs-6) chapters.
 
 ## Rationale
 
@@ -14,41 +14,40 @@ In the Security Requirement Engineering process, we commonly use techniques like
 
 ### Why do we need this table?
 
-The third step of [Rapid Threat Modeling Prototyping (RTMP)](https://github.com/geoffrey-hill-tutamantic/rapid-threat-model-prototyping-docs/blob/master/18x26.Tutamen%20HOWTO-Rapid%20Threat%20Model%20Prototyping.pdf) methodology is *Mitigations* [^1]. The purpose is to define at least one mitigation for each STRIDE threat identified in the previous steps. In that section, it also provides a table that lists the elements of the OWASP Top 10 (OT10) mapped to STRIDE elements.
+The third step of the [Rapid Threat Modeling Prototyping (RTMP)](https://github.com/geoffrey-hill-tutamantic/rapid-threat-model-prototyping-docs/blob/master/18x26.Tutamen%20HOWTO-Rapid%20Threat%20Model%20Prototyping.pdf) methodology is *Mitigations* [^1]. The purpose is to define at least one mitigation for each STRIDE threat identified in the previous steps. In that section, it also provides a table that lists the elements of the OWASP Top 10 (OT10) mapped to STRIDE elements.
 
 Potential improvements:
 1. The OWASP Top 10 reference is outdated (2017 version instead of 2021).
 2. You need an extra step to select the security controls associated with those mitigations (from OT10 to ASVS).
 
-To address the second issue, Mario Platt ([@mario-platt](https://github.com/mario-platt)) contributed to the repository by creating an Excel called [STRIDE-OT10-CWE-OPC-ASVS](https://github.com/geoffrey-hill-tutamantic/rapid-threat-model-prototyping-docs/blob/master/19h20.mar.mapping%20table%20-%20STRIDE-OT10-CWE-OPC-ASVS.xlsx), that not only maps STRIDE against ASVS but also with *CWE*, *OWASP Proactive Controls* and *OWASP Top 10*.
+To address the second issue, Mario Platt ([@mario-platt](https://github.com/mario-platt)) contributed to the repository by creating an Excel called [STRIDE-OT10-CWE-OPC-ASVS](https://github.com/geoffrey-hill-tutamantic/rapid-threat-model-prototyping-docs/blob/master/19h20.mar.mapping%20table%20-%20STRIDE-OT10-CWE-OPC-ASVS.xlsx), that not only maps STRIDE against ASVS but also with *CWE*, *OWASP Proactive Controls* and *OWASP Top 10*. [^2]
 
 Potential improvements:
 1. The OWASP Top 10 reference is outdated (2017 version instead of 2021).
 2. The ASVS reference is outdated (v3.0 instead of v4.0).
 
-Finally, I have minor disagreements in some of the categorization of both authors. In this repository, I will try to address the improvements mentioned above with [a new **STRIDE vs ASVS** equivalence table](#equivalence-table). 
+Finally, I have minor disagreements in some of the categorizations proposed, so in this repository, I will try to address the improvements mentioned above with [a new **STRIDE vs ASVS** equivalence table](#equivalence-table). 
 
 ## Pre-requisites
 
-### STRIDE [^2]
+### STRIDE [^3]
 
 STRIDE is a model for identifying computer security threats developed by Praerit Garg and Loren Kohnfelder at Microsoft. It provides a mnemonic for security threats in six categories.
 It was initially created as part of the process of threat modelling. It is used in conjunction with a model of the target system that can be constructed in parallel. This includes a full breakdown of processes, data stores, data flows, and trust boundaries.
 Today it is often used by security experts to help answer the question *"what can go wrong in this system we're working on?"*. 
 
-Each threat is a violation of a desirable property for a system [^3]:
+Each threat is a violation of a desirable property for a system [^4]:
 
 | Threat                   | Icon | Description                                                                                                                                                                           | Desired property  |
 |--------------------------|:-----:|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
 | **S**poofing                 | 🎭   | Accessing and use of another user’s credentials, such as username and password                                                                                                       | Authenticity
 | **T**ampering                | 🤡   | Intending to maliciously change or modify persistent data, such as records in a database, and the alteration of data in transit between two computers over an open network, such as the Internet  | Integrity
-| **R**epudiation              | 📝   | Performing prohibited operations in a system that lacks the ability to trace the operations                                                                                          | Trazability [^4]
+| **R**epudiation              | 📝   | Performing prohibited operations in a system that lacks the ability to trace the operations                                                                                          | Trazability [^5]
 | **I**nformation disclosure   | 🔓   | Intending to read a file that one was not granted access to, or to read data in transit                                                                                                           | Confidentiality
 | **D**enial of Service        | 💥   | Attempting to deny access to valid users, such as by making a web server temporarily unavailable or unusable                                                                                       | Availability
 | **E**levation of Privilege   | 👑   | Intending to gain privileged access to resources in order to gain unauthorized access to information or to compromise a system                                                                    | Authorization
 
-
-### Application Security Verification Standard (ASVS) [^5]
+### Application Security Verification Standard (ASVS) [^6]
 
 The [OWASP Application Security Verification Standard (ASVS)](https://owasp.org/www-project-application-security-verification-standard) Project provides a basis for testing web application technical security controls and also provides developers with a list of requirements for secure development.
 
@@ -60,7 +59,7 @@ The primary aim of the project is to normalize the range in the coverage and lev
 
 ## Equivalence table
 
-The following table has an equivalence between ASVS chapters and STRIDE threats: [STRIDE-vs-ASVS-4.0.csv](STRIDE-vs-ASVS-4.0.csv)
+The following table has an equivalence between STRIDE threats and ASVS chapters: **[👉 STRIDE-vs-ASVS-4.0.csv 👈](STRIDE-vs-ASVS-4.0.csv)**
 
 ### Table format
 
@@ -69,7 +68,7 @@ The following table has an equivalence between ASVS chapters and STRIDE threats:
 * **ASVS Chapter**: the chapter of the ASVS standard to be mapped.
     - Check ASVS high-level structure at [How To Reference ASVS Requirements](https://owasp.org/www-project-application-security-verification-standard/).
 * **Teams**: the teams that are usually involved in the implementation of the control. 
-    - Bear in mind that ASVS aims for an holistic approach to promote cross-team collaboration. *Security is everyone's responsibility!* ✊
+    - Bear in mind that ASVS aims for a holistic approach to promote cross-team collaboration. *Security is everyone's responsibility!* ✊
 * **Notes**: additional context or comments if applicable.
 * **References**: the short name of the reference:
 
@@ -84,13 +83,13 @@ The following table has an equivalence between ASVS chapters and STRIDE threats:
 1. Understand the functional and technical requirements and their business context.
 2. Use Threat Modeling with STRIDE to identify the threats.
     - My personal choice is [RTMP methodology](https://github.com/geoffrey-hill-tutamantic/rapid-threat-model-prototyping-docs), which is *agile-friendly*.
-3. Use the [STRIDE vs ASVS table](#equivalence-table) to detect which ASVS chapter aims to mitigate each kind of threat.
-4. Accommodate the requirements to the context of your problem.
+3. Use the [STRIDE vs ASVS](#equivalence-table) to detect which ASVS chapter aims to mitigate each kind of threat.
+4. Accommodate the requirements to the specific context of your project.
     - Maybe some controls need modifications or not all of them are applicable.
-6. Provide extra context using the [User Stories](https://en.wikipedia.org/wiki/User_story) format and following [INVEST](https://en.wikipedia.org/wiki/INVEST_(mnemonic)) criteria.
-    - Check [project ASVS User Stories](https://github.com/OpenSecuritySummit/project-ASVS-User-Stories) for practical examples.
+6. Provide extra context using the [User Stories](https://en.wikipedia.org/wiki/User_story) format following [INVEST](https://en.wikipedia.org/wiki/INVEST_(mnemonic)) criteria.
+    - Check [project ASVS User Stories](https://github.com/OpenSecuritySummit/project-ASVS-User-Stories) by [@mario-platt](https://github.com/mario-platt) for practical examples.
 7. Try to automate security controls as much as possible. Level 1 is usually easy to automate.
-    - Check [OWASP ASVS 4.0 testing guide](https://github.com/BlazingWind/OWASP-ASVS-4.0-testing-guide) for practical examples.
+    - Check [OWASP ASVS 4.0 testing guide](https://github.com/BlazingWind/OWASP-ASVS-4.0-testing-guide) by [@BlazingWind](https://github.com/BlazingWind) for practical examples.
 8. Track the completion of the security requirements to handle [residual risk](https://en.wikipedia.org/wiki/Residual_risk).
 
 ## TODO
@@ -100,7 +99,8 @@ The following table has an equivalence between ASVS chapters and STRIDE threats:
  - [ ] Create a [SecurityRAT](https://owasp.org/www-project-securityrat/) requirement set using this format.
 
 [^1]: RTMP page 17
-[^2]: Extracted from https://en.wikipedia.org/wiki/STRIDE_(security)
-[^3]: Extracted from https://owasp.org/www-community/Threat_Modeling_Process#stride-threat-list
-[^4]: Commonly referenced as "non-repudiation", but IMHO it's self-referential and not very descriptive.
-[^5]: Extracted from https://owasp.org/www-project-application-security-verification-standard/
+[^2]: It is the primary source of inspiration for this repository.
+[^3]: Extracted from https://en.wikipedia.org/wiki/STRIDE_(security)
+[^4]: Extracted from https://owasp.org/www-community/Threat_Modeling_Process#stride-threat-list
+[^5]: Commonly referenced as "non-repudiation", but IMHO it's self-referential and not very descriptive.
+[^6]: Extracted from https://owasp.org/www-project-application-security-verification-standard/
