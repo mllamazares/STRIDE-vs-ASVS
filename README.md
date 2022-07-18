@@ -86,7 +86,7 @@ The following table has an equivalence between STRIDE threats and ASVS chapters:
 3. Use the [STRIDE vs ASVS](#equivalence-table) to detect which ASVS chapter aims to mitigate each kind of threat.
 4. Accommodate the requirements to the specific context of your project.
     - Maybe some controls need modifications or not all of them are applicable.
-6. Provide extra context using the [User Stories](https://en.wikipedia.org/wiki/User_story) format following [INVEST](https://en.wikipedia.org/wiki/INVEST_(mnemonic)) criteria.
+6. Provide extra context using the [User Stories](https://en.wikipedia.org/wiki/User_story) format following the [INVEST](https://en.wikipedia.org/wiki/INVEST_(mnemonic)) criteria.
     - Check [project ASVS User Stories](https://github.com/OpenSecuritySummit/project-ASVS-User-Stories) by [@mario-platt](https://github.com/mario-platt) for practical examples.
 7. Try to automate security controls as much as possible.
     - Level 1 is usually easy to automate.
