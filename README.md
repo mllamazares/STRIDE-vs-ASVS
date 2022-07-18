@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mllamazares/)
 [![Watch on GitHub](https://img.shields.io/github/watchers/mllamazares/STRIDE-vs-ASVS.svg?style=social)](https://github.com/mllamazares/STRIDE-vs-ASVS/watchers)
 [![Star on GitHub](https://img.shields.io/github/stars/mllamazares/STRIDE-vs-ASVS.svg?style=social)](https://github.com/mllamazares/STRIDE-vs-ASVS/stargazers)
-[![Tweet](https://img.shields.io/twitter/url/https/github.com/mllamazares/STRIDE-vs-ASVS.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20Hyde!%20%E2%9C%A8%20An%20accessible,%20open-source%20markdown%20editor%20for%20any%20user%20E2%9C%A8%20https://github.com/jonsn0w/hyde%20%F0%9F%A4%97)
+[![Tweet](https://img.shields.io/twitter/url/https/github.com/mllamazares/STRIDE-vs-ASVS.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20STRIDE-vs-ASVS%21%20https%3A%2F%2Fgithub.com%2Fmllamazares%2FSTRIDE-vs-ASVS)
 
 The purpose of this repository is to set a bridge between Threat Modeling and the security controls definition by providing an [equivalence table](#equivalence-table) that maps the [STRIDE](#stride-3) model against the [Application Security Verification Standard (ASVS)](#application-security-verification-standard-asvs-6) chapters.
 
