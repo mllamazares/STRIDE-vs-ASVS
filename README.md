@@ -6,7 +6,7 @@
 [![Star on GitHub](https://img.shields.io/github/stars/mllamazares/STRIDE-vs-ASVS.svg?style=social)](https://github.com/mllamazares/STRIDE-vs-ASVS/stargazers)
 [![Tweet](https://img.shields.io/twitter/url/https/github.com/mllamazares/STRIDE-vs-ASVS.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20Hyde!%20%E2%9C%A8%20An%20accessible,%20open-source%20markdown%20editor%20for%20any%20user%20E2%9C%A8%20https://github.com/jonsn0w/hyde%20%F0%9F%A4%97)
 
-The purpose of this repository is to act as a bridge between Threat Modeling and the security controls definition by providing an [equivalence table](#equivalence-table) to map the [STRIDE](#stride-3) model against the [Application Security Verification Standard (ASVS)](#application-security-verification-standard-asvs-6) chapters.
+The purpose of this repository is to set a bridge between Threat Modeling and the security controls definition by providing an [equivalence table](#equivalence-table) that maps the [STRIDE](#stride-3) model against the [Application Security Verification Standard (ASVS)](#application-security-verification-standard-asvs-6) chapters.
 
 ## Rationale
 
@@ -26,7 +26,7 @@ Potential improvements:
 1. The OWASP Top 10 reference is outdated (2017 version instead of 2021).
 2. The ASVS reference is outdated (v3.0 instead of v4.0).
 
-Finally, I have minor disagreements in some of the categorizations proposed, so in this repository, I will try to address the improvements mentioned above with [a new **STRIDE vs ASVS** equivalence table](#equivalence-table). 
+Finally, I have minor disagreements in some of the categorizations proposed, so in this repository, I will try to address the improvements mentioned above with a brand new [**STRIDE vs ASVS** equivalence table](#equivalence-table). 
 
 ## Pre-requisites
 
@@ -63,9 +63,9 @@ The following table has an equivalence between STRIDE threats and ASVS chapters:
 
 ### Table format
 
-* **STRIDE**: threats applicable to that ASVS chapter (for more info check the [STRIDE](#stride) section).
+* **STRIDE**: the threat to be mapped (check the [STRIDE](#stride) section for more info).
     - Note that there are some blank cells because those chapters depend on the particular context of the project (i.e. *V12 - Files and Resources*) or are addressed in the design phase (i.e. *V1 - Architecture & Design*).
-* **ASVS Chapter**: the chapter of the ASVS standard to be mapped.
+* **ASVS Chapter**: the ASVS chapter that aims to mitigate that threat.
     - Check ASVS high-level structure at [How To Reference ASVS Requirements](https://owasp.org/www-project-application-security-verification-standard/).
 * **Teams**: the teams that are usually involved in the implementation of the control. 
     - Bear in mind that ASVS aims for a holistic approach to promote cross-team collaboration. *Security is everyone's responsibility!* ✊
@@ -88,7 +88,8 @@ The following table has an equivalence between STRIDE threats and ASVS chapters:
     - Maybe some controls need modifications or not all of them are applicable.
 6. Provide extra context using the [User Stories](https://en.wikipedia.org/wiki/User_story) format following [INVEST](https://en.wikipedia.org/wiki/INVEST_(mnemonic)) criteria.
     - Check [project ASVS User Stories](https://github.com/OpenSecuritySummit/project-ASVS-User-Stories) by [@mario-platt](https://github.com/mario-platt) for practical examples.
-7. Try to automate security controls as much as possible. Level 1 is usually easy to automate.
+7. Try to automate security controls as much as possible.
+    - Level 1 is usually easy to automate.
     - Check [OWASP ASVS 4.0 testing guide](https://github.com/BlazingWind/OWASP-ASVS-4.0-testing-guide) by [@BlazingWind](https://github.com/BlazingWind) for practical examples.
 8. Track the completion of the security requirements to handle [residual risk](https://en.wikipedia.org/wiki/Residual_risk).
 
