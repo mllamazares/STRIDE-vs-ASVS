@@ -52,7 +52,7 @@ graph LR
 
 ### ⚠️ Disclaimer
 
-This table is a convenient reference to help link these two resources. However, it does **NOT**:
+This table is meant to be a simple reference to help connect these two resources. It does **NOT**:
 1. Attempt to oversimplify the control selection process, as Security Requirement Engineering (SRE) is more complex and context-dependent.
 2. Map all ASVS chapters, since the mapping to STRIDE isn’t always one to one due to:
    - Project-specific factors (e.g., *V12 - Files and Resources*).
